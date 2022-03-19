@@ -37,9 +37,18 @@ Output:
 
 */
 
-
-
 // Ex: 3
+const followers = ["john", "edward", "jack"];
+
+// returns index of the selected element
+const requestIndex = followers.indexOf("edward");
+
+// Now, use splice to delete
+deletedFollowers = followers.splice(requestIndex, 1)
+
+console.log(followers, deletedFollowers);
+
+// Ex: 4
 const roles = ["developer", "designer", "marketer"];
 
 deletedRole = roles.pop()
@@ -54,7 +63,7 @@ Output:
 
 */
 
-// Ex: 4
+// Ex: 5
 const names = ["John", "Edward", "Jack"];
 
 deletedName = names.shift();
@@ -69,7 +78,7 @@ console.log(names, deletedName);
 
 */
 
-// Ex: 5
+// Ex: 6
 const tasks = [
   { id: 1, description: 'Buy Grocery' },
   { id: 2, description: 'Create a blog post' },
