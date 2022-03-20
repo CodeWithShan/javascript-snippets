@@ -9,11 +9,12 @@ const countCharacters = (str) => {
 }
 
 const countWords = (str) => {
-    return typeof (str) === "string" && str.trim().split(/\s+/).filter(st => st != '').length;
+    return typeof (str) === "string"
+        && str.trim().split(/\s+/).filter(st => st != '').length;
 }
 
 metaDescription.addEventListener("input", () => {
-    metaDescWords.innerHTML = countWords(metaDescription.value);
-    metaDescCharacters.innerHTML = countCharacters(metaDescription.value);
+    metaDescWords.textContent = countWords(metaDescription.value);
+    metaDescCharacters.textContent = countCharacters(metaDescription.value);
 })
 
